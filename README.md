@@ -1,9 +1,10 @@
 # Tutoriais
-Diversos tutoriais sobre diversos temas relacionados a programação web.
+Tutoriais simples e de grande Ajuda
 # Índice
 * [WordPress](#wordpress)
     * [Ajax com Javascript puro no Wordpress](#ajax-com-javascript-puro-no-wordpress)
-
+* [JavaScript X Jquery](#javascript-x-jquery)
+* [Linux](#linux)
 
 ## Wordpress
 ## Ajax com Javascript puro no Wordpress
@@ -73,7 +74,10 @@ Agora vamos para parte do front no arquivo que será o requisitador da função 
 
 </script>
 ```
+## JavaScript X Jquery
 
+## Linux
+   
 # Contribuidor
   Dúvidas ou algum erro? corrija ou mande um e-mail
   Paulo Almeida
