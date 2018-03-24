@@ -68,3 +68,8 @@ e 'wp_ajax_{nome_da_funcao}'*/
 
 </script>
 ```
+# Contribuidor
+  Paulo Almeida
+* [Linkedin](https://www.linkedin.com/in/paulorick/)
+* [GitHub](https://github.com/rickslayer/)
+
