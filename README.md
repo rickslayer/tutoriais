@@ -74,6 +74,8 @@ Agora vamos para parte do front no arquivo que será o requisitador da função 
 
 </script>
 ```
+**Existem algumas práticas de segurança ao utilizar AJAX no WordPress. Pesquise e compartilhe**
+
 ## JavaScript X Jquery
 
 ## Linux
