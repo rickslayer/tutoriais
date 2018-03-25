@@ -82,7 +82,7 @@ Agora vamos para parte do front no arquivo que será o requisitador da função 
    
 # Contribuidor
   Dúvidas ou algum erro? corrija ou mande um e-mail
-  Paulo Almeida
+ 
 * [Linkedin](https://www.linkedin.com/in/paulorick/)
 * [GitHub](https://github.com/rickslayer/)
 * [Email](mailto:paulo@actio.net.br)
