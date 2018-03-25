@@ -77,6 +77,15 @@ Agora vamos para parte do front no arquivo que será o requisitador da função 
 **Existem algumas práticas de segurança ao utilizar AJAX no WordPress. Pesquise e compartilhe**
 
 ## JavaScript X Jquery
+* Selecionar elemento HTML
+```objc
+<script>
+      //jQuery
+      $("#id_do_elemento") ou $(".classe_do_elemento")
+      //JavaScript
+      document.getElementById("id_do_elemento") ou document.getElementsByClassName("classe_do_elemento")
+</script>
+``` 
 
 ## Linux
    
