@@ -218,6 +218,8 @@ no arquivo functions.php
 <?php
             function enviar_email()
             {
+                 require_once('envia_email_controller.php');
+                 
                  $envia_email = new envia_email_controller(); //cria o objeto da classe
                  $envia_email->setTo('emaildodestinatario@mail.com');
                  $envia_email->setAssunto('Assunto do email');
