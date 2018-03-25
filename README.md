@@ -81,7 +81,7 @@ Agora vamos para parte do front no arquivo que será o requisitador da função 
 Criando uma classe de envio de e-mail no Wordpress sem auxilio de plugin
 
 Criaremos uma classe para ser chamada na funcions.php do seu tema no Wordpress.
-Também utilizaremos o [@PHPMailer](https://github.com/PHPMailer/PHPMailer) uma das classe mais utilizadas
+Também utilizaremos o [@PHPMailer](https://github.com/PHPMailer/PHPMailer) uma das classes mais utilizadas
 no auxílio de envio de e-mail.
 ```objc
 classe envia_email.controller.php
