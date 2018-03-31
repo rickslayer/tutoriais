@@ -232,7 +232,8 @@ no arquivo functions.php
 A função pode ser chamada no front por AJAX , por exemplo, ou em qualquer rotina no back do Wordpress.
 
 ## Aplicar Evento Purchase do Facebook Pixel no Woocommerce
-   Tive muita dificuldade com o evento purchase do [@Pixel](https://www.facebook.com/business/learn/facebook-ads-pixel) para adicionar no [@Woocommerce](https://github.com/woocommerce/). Não achei nenhum plugin que fizesse isso de forma correta. Criei na mão mesmo.
+   Tive muita dificuldade com o evento purchase do [@Pixel](https://www.facebook.com/business/learn/facebook-ads-pixel) para adicionar no [@Woocommerce](https://github.com/woocommerce/).
+   Não achei nenhum plugin que fizesse isso de forma correta. Criei na mão mesmo.
    Como o evento recebe um parametro dinâmico que é o preço, torna-se um pouco complicado para plugins resolver isto.
    Resolvi de forma simples. Veja:
    
@@ -263,7 +264,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-//Eu criei um elemento HTML para armazenar o valor do pedido utilizando o objeto $order do woocommerce que me trás todos os objetos do pedido
+//Eu criei um elemento HTML para armazenar o valor do pedido utilizando o objeto 
+$order do woocommerce que me trás todos os objetos do pedido
 <input type="hidden" id="total_pedido" name="total_pedido" value="<?php echo $order->total;?>">
 
 //Agora o script do pixel eu coloquei no final da última div da página ficando assim:
