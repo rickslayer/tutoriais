@@ -4,6 +4,7 @@ Tutoriais simples e de grande Ajuda
 * [WordPress](#wordpress)
     * [Ajax com Javascript puro no Wordpress](#ajax-com-javascript-puro-no-wordpress)
     * [Envio de Email Sem Plugin no Wordpress](#envio-de-email-sem-plugin-no-wordpress)
+    * [Aplicar Evento Purchase do Facebook Pixel no Woocommerce](#aplicar-evento-purchase-do-facebook-pixel-no-woocommerce)
 * [JavaScript X Jquery](#javascript-x-jquery)
 * [Linux](#linux)
 
@@ -229,6 +230,73 @@ no arquivo functions.php
             }
 ```
 A função pode ser chamada no front por AJAX , por exemplo, ou em qualquer rotina no back do Wordpress.
+
+## Aplicar Evento Purchase do Facebook Pixel no Woocommerce
+   Tive muita dificuldade com o evento purchase do [@Pixel](https://www.facebook.com/business/learn/facebook-ads-pixel) para adicionar no [@Woocommerce](https://github.com/woocommerce/). Não achei nenhum plugin que fizesse isso de forma correta. Criei na mão mesmo.
+   Como o evento recebe um parametro dinâmico que é o preço, torna-se um pouco complicado para plugins resolver isto.
+   Resolvi de forma simples. Veja:
+   
+   ```objc
+   /**
+   * Encontre o arquivo chamado thankyou.php dentro da pasta /wp-content/themes/seu-tema/woocommerce/checkout/thankyou.php
+   **/
+   //A página começa geralmente dessa forma
+   <?php
+/**
+ * Thankyou page
+ *
+ * This template can be overridden by copying it to yourtheme/woocommerce/checkout/thankyou.php.
+ *
+ * HOWEVER, on occasion WooCommerce will need to update template files and you
+ * (the theme developer) will need to copy the new files to your theme to
+ * maintain compatibility. We try to do this as little as possible, but it does
+ * happen. When this occurs the version of the template file will be bumped and
+ * the readme will list any important changes.
+ *
+ * @see 	    https://docs.woocommerce.com/document/template-structure/
+ * @author 		WooThemes
+ * @package 	WooCommerce/Templates
+ * @version     3.2.0
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+?>
+//Eu criei um elemento HTML para armazenar o valor do pedido utilizando o objeto $order do woocommerce que me trás todos os objetos do pedido
+<input type="hidden" id="total_pedido" name="total_pedido" value="<?php echo $order->total;?>">
+
+//Agora o script do pixel eu coloquei no final da última div da página ficando assim:
+ //Pixel Facebook
+!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window,document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
+	
+   //capiturando o campo total_pedido e armazenando na variavel valor
+	var valor= document.getElementById('total_pedido');
+   
+    //capiturando com JQuery
+    // var valor = $("#total_pedido");
+       
+	fbq('init', 'id-do-seu-pixel'); 
+	fbq('track', 'Purchase', {'value':valor.value,'currency':'BRL'});
+   //com jquery
+   //fbq('track', 'Purchase', {'value':$(valor).val(),'currency':'BRL'});
+
+</script>
+<noscript>
+	<img height="1" width="1" 
+	src="https://www.facebook.com/tr?id=ID-DO-SEU-PIXEL&ev=Purchase
+	&noscript=1"/>
+	</noscript>
+   </div>
+   ```
+   **É isso**
 
 ## JavaScript X Jquery
 * Selecionar elemento HTML
