@@ -304,6 +304,10 @@ $order do woocommerce que me trás todos os objetos do pedido
 
 * Tabuada com JavaScript Exemplo:
 <code>https://codepen.io/rickslayer/pen/YavxYm</code>
+
+* Carregar JSON via Javascript em um elemento Lista:
+<code>https://codepen.io/rickslayer/pen/vRrRNp</code>
+
 ## Linux
    
 # Contribuidor
