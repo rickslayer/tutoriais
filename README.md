@@ -301,16 +301,9 @@ $order do woocommerce que me trás todos os objetos do pedido
    **É isso**
 
 ## JavaScript X Jquery
-* Selecionar elemento HTML
-```objc
-<script>
-      //jQuery
-      $("#id_do_elemento") ou $(".classe_do_elemento")
-      //JavaScript
-      document.getElementById("id_do_elemento") ou document.getElementsByClassName("classe_do_elemento")
-</script>
-``` 
 
+* Tabuada com JavaScript Exemplo:
+<code>https://codepen.io/rickslayer/pen/YavxYm</code>
 ## Linux
    
 # Contribuidor
