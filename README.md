@@ -308,6 +308,9 @@ $order do woocommerce que me trás todos os objetos do pedido
 * Carregar JSON via AJAX em um elemento Lista Javascript Puro:
 <code>https://codepen.io/rickslayer/pen/vRrRNp</code>
 
+* Carregar JSON via AJAX em um elemento Lista  com AngularJS:
+<code>https://codepen.io/rickslayer/pen/ZxRxrW</code>
+
 ## Linux
    
 # Contribuidor
