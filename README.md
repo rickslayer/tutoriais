@@ -311,6 +311,9 @@ $order do woocommerce que me trás todos os objetos do pedido
 * Carregar JSON via AJAX em um elemento Lista  com AngularJS:
 <code>https://codepen.io/rickslayer/pen/ZxRxrW</code>
 
+* Trabalhando com o Recaptcha do Google
+<code>https://codepen.io/rickslayer/pen/YaROzZ</code>
+
 ## Linux
    
 # Contribuidor
