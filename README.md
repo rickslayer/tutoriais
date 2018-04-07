@@ -312,7 +312,7 @@ $order do woocommerce que me trás todos os objetos do pedido
 <code>https://codepen.io/rickslayer/pen/ZxRxrW</code>
 
 * Trabalhando com o Recaptcha do Google
-<code>https://codepen.io/rickslayer/pen/YaROzZ</code>
+<code>https://codepen.io/rickslayer/pen/YaROzZ</code> ou copie o código em <code>['/rickslayer/recaptcha'](https://github.com/rickslayer/rickslayer.github.io/blob/master/recaptcha/index.html)</code>
 
 ## Linux
    
